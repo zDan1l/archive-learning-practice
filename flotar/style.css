@@ -1,0 +1,71 @@
+.kotak1 {
+    width: 800px;
+    margin: auto;
+    border: 1px dotted #000;
+}
+
+.kotakan {
+    width: 800px;
+    margin: auto;
+    border: 1px dotted #000;
+}
+
+.cf:after,
+cf:before {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: left;
+}
+
+div {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    float: left;
+    margin: 5px;
+}
+
+.clear {
+    clear: left;
+}
+
+.img {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    border: 1px dotted #000;
+    overflow: auto;
+}
+
+.layout1 {
+    width: 200px;
+    height: 400px;
+    background-color: skyblue;
+    float: left;
+}
+
+.layout2 {
+    width: 370px;
+    height: 400px;
+    background-color: cadetblue;
+    float: left;
+}
+
+.layout3 {
+    width: 100px;
+    height: 400px;
+    background-color: green;
+    float: left;
+}
+
+.img img {
+    width: 100px;
+    height: 200px;
+    float: left;
+}

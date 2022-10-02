@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "regular";
+    src: url(font/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: "light";
+    src: url(font/Poppins-Light.otf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(font/Poppins-Bold.otf);
+}
+
+@font-face {
+    font-family: "semibold";
+    src: url(font/Poppins-SemiBold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: 'regular', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: 'hero hero feature-1''hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'bold';
+    padding: 50px;
+}
+
+.hero h2,
+.hero p {
+    display: none;
+}
+
+.features {
+    background: #000;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.features p {
+    background: #000;
+    margin: 10px 0;
+}
+
+.features h4 {
+    background: #000;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(img/sub-hero.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(img/sub-hero\ 2.jpg);
+    background-size: cover;
+}
+
+.features .price {
+    font-size: 3em;
+    font-family: 'light';
+}
+
+
+/* menu */
+
+.menu {
+    order: -1;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+.menu .brand {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* reponsive breakpoints */
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        grid-template-columns: 1fr;
+        order: inherit;
+    }
+    .menu .brand {
+        display: none;
+    }
+    .hero h2,
+    .hero p {
+        display: block;
+        background-color: #000;
+        color: white;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .menu-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {}

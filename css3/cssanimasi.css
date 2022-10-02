@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px 100px;
+    animation: warna 3s ease infinite alternate;
+}
+
+.kotak {
+    width: 100px;
+    margin: auto;
+    height: 100px;
+    background-color: royalblue;
+    animation: lebar 2s ease 3 alternate backwards;
+}
+
+@keyframes lebar {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    50% {
+        width: 800px;
+        height: 100px;
+    }
+    100% {
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@keyframes warna {
+    0% {
+        background-color: orange;
+    }
+    10% {
+        background-color: rgb(251, 255, 0);
+    }
+    20% {
+        background-color: brown;
+    }
+    30% {
+        background-color: rgb(166, 255, 0);
+    }
+    40% {
+        background-color: green;
+    }
+    50% {
+        background-color: rgb(136, 255, 0);
+    }
+    60% {
+        background-color: yellow;
+    }
+    70% {
+        background-color: rgb(0, 255, 136);
+    }
+    80% {
+        background-color: salmon;
+    }
+    90% {
+        background-color: rgb(91, 100, 182);
+    }
+    100% {
+        background-color: grey;
+    }
+}
